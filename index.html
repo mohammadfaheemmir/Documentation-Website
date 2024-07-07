@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Documentation website</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>JavaScript Documentation</h1>
+            <ul>
+                <a href="#introduction">
+                    <li>Introduction</li>
+                </a>
+
+                <a href="#what_you_should_already_know"><li>What you should already know</li>
+                </a>
+
+                <a href="#javascript_and_java"><li>JavaScript and Java</li></a>
+
+                <a href="#hello_world"><li>Hello World</li></a>
+
+                <a href="#variables"><li>Variables</li></a>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="introduction">
+            <h2>Introduction</h2>
+            <article>
+                <h4>
+                    Hello l am Mohammad Faheem Mir,
+                </h4>
+                <h5>
+                    l am a web developer l am developing websites from last 5 months l know many web languages for web development  like HTML(HYPER TEXT MARKUP LANGUAGE), CSS(Cascading Style sheet) and JavaScript.
+                </h5>
+                <ul>
+                    <li>Hypertext markup languge</li>
+                    <li>cascading style sheet</li>
+                    <li>JavaScript</li>
+                </ul>
+            </article>
+        </section>
+
+        <section id="what_you_should_already_know">
+            <h2>What you should already know</h2>
+            <article>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit esse fuga consequuntur sequi voluptatem quis recusandae magni culpa sint perferendis accusamus, omnis inventore at.
+                </p>
+                <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Temporibus excepturi iste saepe vero quisquam commodi repellat eveniet, earum voluptates repellendus nemo sequi pariatur! Libero corrupti quas veniam a sit voluptas.
+                </p>
+                <ul>
+                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, sunt atque ex ullam culpa ipsum vel earum laudantium unde optio?</li>
+
+
+                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, sunt atque ex ullam culpa ipsum vel earum laudantium unde optio?</li>
+                </ul>
+            </article>
+        </section>
+
+        <section id="javascript_and_java">
+            <h2>JavaScript and Java</h2>
+            <article>
+                <h3>1) Local Variable</h3>
+                <p>A variable declared inside the body of the method is called local variable. You can use this variable only within that method and the other methods in the class aren't even aware that the variable exists.</p>
+                A local variable cannot be defined with "static" keyword.
+
+                <h3>2) Instance Variable</h3>
+                <p>A variable declared inside the class but outside the body of the method, is called an instance variable. It is not declared as static.</p>
+                <p>It is called an instance variable because its value is instance-specific and is not shared among instances.</p>
+
+                <h3>3) Static variable</h3>
+                <p>A variable that is declared as static is called a static variable. It cannot be local. You can create a single copy of the static variable and share it among all the instances of the class. Memory allocation for static variables happens only once when the class is loaded in the memory.</p>
+                <p class="java">
+                    import java.util.Scanner;
+                    public class calculator{
+                        public static void main(String[] args) {
+                            Scanner sc=new Scanner(System.in);
+                    
+                            System.out.println();
+                            System.out.println("--------------------Calculate your results here---------------------");
+                            System.out.println();
+                    
+                            System.out.println("Enter the first number :");
+                            int num1=sc.nextInt();
+                    
+                            System.out.println("Enter the second number :");
+                            int num2=sc.nextInt();
+                    
+                            System.out.println("Select the symbol(+,-,*,/,%)");
+                            String symbol=sc.next();
+                            int result;
+                            
+                            switch(symbol){
+                                case "+":result=num1+num2;
+                                        System.out.println("Addition of number is "+result);
+                                        break;
+                                
+                                case "-":result=num1-num2;
+                                        System.out.println("Subtraction of number is "+result);
+                                        break;
+                                    
+                                case "*":result=num1*num2;
+                                        System.out.println("Multiplication of number is "+result);
+                                        break;
+                    
+                                case "/":result=num1/num2;
+                                        System.out.println("Division of number is :"+result);
+                                        break;
+                    
+                                case "%":result=num1%num2;
+                                        System.out.println("Modulus of number is :"+result);
+                                        break;
+                    
+                                default:
+                                        System.out.println("Enter the valid operator");
+                                        break;
+                            }
+                            System.out.println("******************THANK YOU FOR USING**************************");
+                        }
+                    }
+                </p>
+            </article>
+        </section>
+
+        <section id="hello_world">
+            <h2>Hello World</h2>
+            <article>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit esse fuga consequuntur sequi voluptatem quis recusandae magni culpa sint perferendis accusamus, omnis inventore at.
+                </p>
+                <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Temporibus excepturi iste saepe vero quisquam commodi repellat eveniet, earum voluptates repellendus nemo sequi pariatur! Libero corrupti quas veniam a sit voluptas.
+                </p>
+                <ul>
+                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, sunt atque ex ullam culpa ipsum vel earum laudantium unde optio?</li>
+
+
+                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, sunt atque ex ullam culpa ipsum vel earum laudantium unde optio?</li>
+                </ul>
+
+                <section class="sec">
+                        <p class="one">public class HelloWorld {</p>
+                        <p class="two">public static void main(String[] args) {</p>
+                            <p class="three">//Write your code here</p>
+                    <p class="four">{</p>
+                </section>
+            </article>
+        </section>
+
+        <section id="variables">
+            <h2>Variables</h2>
+            <article>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit esse fuga consequuntur sequi voluptatem quis recusandae magni culpa sint perferendis accusamus, omnis inventore at.
+                </p>
+                <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Temporibus excepturi iste saepe vero quisquam commodi repellat eveniet, earum voluptates repellendus nemo sequi pariatur! Libero corrupti quas veniam a sit voluptas.
+                </p>
+                <ul>
+                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, sunt atque ex ullam culpa ipsum vel earum laudantium unde optio?</li>
+
+
+                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, sunt atque ex ullam culpa ipsum vel earum laudantium unde optio?</li>
+                </ul>
+            </article>
+        </section>
+    </main>
+</body>
+</html>

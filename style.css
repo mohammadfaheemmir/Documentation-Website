@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+    font-family: sans-serif;
+}
+
+html,body{
+    font-weight: 300;
+    line-height: 1.4;
+    scroll-behavior: smooth;
+}
+
+a{
+    text-decoration: none;
+}
+
+body{
+    display: flex;
+}
+
+header{
+    width: 30vh;
+    border: 1px solid gray;
+    height: 99.7vh;
+}
+
+nav h1{
+    font-size: 20px;
+    font-weight: 600;
+    padding: 10px;
+    border-bottom: 1px solid gray;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+
+}
+
+nav ul li{
+    border-bottom: 1px solid gray;
+    padding: 10px;
+    color: black;
+    font-weight: 600;
+}
+
+nav ul li:hover{
+    background: #ccc;
+    transition: 0.3s;
+}
+
+main{
+    padding: 50px;
+    max-width: 1200px;
+}
+
+section{
+    margin-bottom: 50px;
+}
+
+section article{
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+section h2{
+    font-size: 20px;
+    border-bottom: 1px solid gray;
+    margin-bottom: 10px;
+    font-weight: 800;
+}
+
+section article ul{
+    margin-left: 30px;
+}
+
+section article ul li{
+    margin-bottom: 10px;
+}
+
+.sec{
+    height: 15vh;
+    background: gray;
+    padding: 30px;
+    color: white;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.java{
+    height: 30vh;
+    background: gray;
+    padding: 30px;
+    color: white;
+    border-radius: 20px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+
